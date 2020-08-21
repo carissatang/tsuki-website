@@ -1,3 +1,18 @@
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var FAQ = this.nextElementSibling;
+    if (FAQ.style.maxHeight){
+      FAQ.style.maxHeight = null;
+    } else {
+      FAQ.style.maxHeight = FAQ.scrollHeight + "px";
+    } 
+  });
+}
+
 (function() {
   // get all data in form and return object
   function getFormData(form) {
