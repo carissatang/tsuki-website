@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <title>Tsuki Designs</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar  -->
+    <div class="navbar">
+      <div style="flex-grow: 1">
+        <a href="index.html">
+          <div class="logobutton">
+            <img
+              src="https://cdn.glitch.com/e5c31b5d-1dcf-46f7-b46d-fb746e907e42%2Fbusinesslogo%20copy%20(1).png?v=1597948766333"
+              defer
+              width="50"
+              alt="logo button"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="shop.html">🛒 Shop</a></li>
+            <li><a href="about.html">✌️ About</a></li>
+            <li><a href="faq.html">💬 FAQs</a></li>
+            <li><a href="contact.html">☎️ Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+
+  <h1 class="page-header">Contact</h1>
+  <div class="content">
+    <h2>
+      Have a question, comment, or concern? Reach out to us or drop a message in
+      the contact form below.
+    </h2>
+    <br />
+    <div class="contact">
+      <form
+        class="gform"
+        method="POST"
+        action="https://script.google.com/macros/s/AKfycbwc6FHubtSX_pgeeAycSmvRtXbJb8RXXnXxTkkySbpR8L5snYY/exec"
+      >
+        <div>
+          <label for="name">Your name:&nbsp;</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Bob Ross"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Your email:&nbsp;</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. bobross@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Your message:&nbsp;</label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="e.g. I have a question about my order!"
+            required
+          />
+        </div>
+        <br />
+        <div>
+          <button type="submit" id="submit-form">Send your message 🌙</button>
+        </div>
+        <br />
+        <div style="display: none" class="thankyou_message">
+          <p>
+            Thanks for contacting us! We will get back to you soon!
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <i>(C) Copyright 2020. Tsuki Designs.</i>
+  </footer>
+</html>

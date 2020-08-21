@@ -1,0 +1,170 @@
+/* CSS files add styling rules to your content */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif SC", serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+h2 {
+  font-size: 25px;
+  color: #585858;
+}
+
+p {
+  font-size: 20px;
+}
+
+/*Navigation Bar*/
+.navbar {
+  display: flex;
+  padding: 20px;
+  background-color: #7889A6;
+  justify-content: flex-end;
+  box-shadow: 10px solid #def5f6;
+  align-items: center;
+}
+.nav li {
+  display: inline-block;
+  padding: 15px 20px;
+}
+.nav li a {
+  transition: all 0.3s ease 0s;
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 18px;
+}
+.nav a:hover {
+  background-color: #dfdfdd;
+  padding: 20px 30px;
+  opacity: 0.5;
+  color: black;
+}
+
+.logobutton {
+  flex-grow: 1;
+  padding-left: 1em;
+}
+/* All Pages Header*/
+.page-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 45px;
+  padding: 1em;
+}
+
+.border-left {
+  border-left: 2px solid black;
+  padding: 1em;
+  margin: 1em;
+}
+/*Homepage -- Introduction Paragraph*/
+.content {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+#homepage-slogan {
+  font-size: 22pt;
+}
+#grey-text {
+  font-size: 18pt;
+  color: grey;
+}
+
+.homepageOne {
+  display: flex;
+}
+
+.pillars {
+  display: flex;
+  text-align: left;
+  padding: 1em;
+  margin-top: 5em;
+  padding-top: 2em;
+  border-top: 1px solid #dbdad5;
+}
+
+/*FORM*/
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="email"],
+select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#submit-form {
+  background: #7889A6;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type="submit"]:hover {
+  background-color: #7889A6;
+}
+
+/*ABOUT PAGE*/
+#defOne {
+  font-size: 30pt;
+  color: grey;
+}
+#defTwo {
+  font-size: 16pt;
+  color: #585858;
+}
+.sectionOne {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionTwo {
+  display: flex;
+}
+.sectionTwo div {
+  padding: 1em;
+}
+
+/*FAQ PAGE*/
+.FAQONE,
+.FAQTWO,
+.sectionTwo {
+  border-top: 1px solid #dbdad5;
+  padding: 1em;
+}
+
+/*Footer*/
+footer {
+  padding: 30px;
+  margin-top: 10em;
+}
