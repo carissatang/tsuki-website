@@ -1,9 +1,8 @@
-/* CSS files add styling rules to your content */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Serif SC", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -23,10 +22,13 @@ p {
 .navbar {
   display: flex;
   padding: 20px;
-  background-color: #7889A6;
-  justify-content: flex-end;
-  box-shadow: 10px solid #def5f6;
+  justify-content: space-between;
   align-items: center;
+  top: 0;
+  left: 0;
+  position: sticky;
+  opacity: 0.8;
+  background-color: white;
 }
 .nav li {
   display: inline-block;
@@ -34,7 +36,7 @@ p {
 }
 .nav li a {
   transition: all 0.3s ease 0s;
-  color: white;
+  color: black;
   text-decoration: none;
   font-weight: 100;
   font-size: 18px;
@@ -43,13 +45,12 @@ p {
   background-color: #dfdfdd;
   padding: 20px 30px;
   opacity: 0.5;
-  color: black;
+  color: grey;
+}
+.logobutton {
+  position: relative;
 }
 
-.logobutton {
-  flex-grow: 1;
-  padding-left: 1em;
-}
 /* All Pages Header*/
 .page-header {
   display: flex;
@@ -70,12 +71,22 @@ p {
   display: flex;
   justify-content: left;
   flex-direction: column;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.homepage-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 1em;
 }
 
 #homepage-slogan {
-  font-size: 22pt;
+  font-size: 18pt;
+  text-align: center;
+  color: grey;
 }
 #grey-text {
   font-size: 18pt;
@@ -84,10 +95,12 @@ p {
 
 .homepageOne {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pillars {
   display: flex;
+  flex-wrap: wrap;
   text-align: left;
   padding: 1em;
   margin-top: 5em;
@@ -96,11 +109,6 @@ p {
 }
 
 /*FORM*/
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
 input[type="text"],
 select {
   padding: 12px 20px;
@@ -117,7 +125,7 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-#submit-form {
+.submit {
   background: #7889A6;
   border: 0;
   color: #fff;
@@ -129,12 +137,51 @@ select {
   border-radius: 6px;
   font-weight: bold;
 }
-
-/* Add a background color to the submit button on mouse-over */
 input[type="submit"]:hover {
   background-color: #7889A6;
 }
 
+/*SHOP PAGE */
+.border-bottom {
+  border-bottom: 1px solid #dbdad5;
+  padding: 1em;
+}
+
+.shop {
+  border: 1px solid #dbdad5;
+  background: #F8F8F8;
+  border-radius: 10px;
+  padding: 1em;
+}
+.collectionOne {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em;
+  flex-wrap: wrap;
+}
+.item {
+  border: 1px solid #dbdad5;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px 1px #888888;
+}
+.item:hover {
+  box-shadow: 1px 1px 10px 1px #444444;
+  transition: all 0.2s ease 0s;
+}
+.desc {
+  padding: 15px;
+  text-align: left;
+}
+.order-form {
+  background: #F8F8F8;
+  padding: 2em;
+  border-radius: 10px;
+  margin-right: 2em;
+}
+.order-section {
+  display: flex;
+  flex-wrap: wrap;
+}
 /*ABOUT PAGE*/
 #defOne {
   font-size: 30pt;
@@ -146,15 +193,20 @@ input[type="submit"]:hover {
 }
 .sectionOne {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 2em;
 }
 .sectionTwo {
   display: flex;
+  flex-wrap: wrap;
 }
 .sectionTwo div {
   padding: 1em;
 }
-
+.order-FAQ {
+  margin: 2em;
+}
 /*FAQ PAGE*/
 .FAQONE,
 .FAQTWO,
@@ -163,8 +215,74 @@ input[type="submit"]:hover {
   padding: 1em;
 }
 
+.collapsible {
+  background-color: #A9A9A9;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #888888;
+}
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.FAQ {
+  padding: 0 2em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.FAQ p {
+  padding: 1em;
+}
+
+/*CONTACT PAGE*/
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #F8F8F8;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.socials {
+  padding: 1em;
+  background: #F8F8F8;
+}
+.socials a {
+  text-decoration: none;
+}
+
 /*Footer*/
 footer {
   padding: 30px;
-  margin-top: 10em;
+  display: flex;
+  justify-content: space-between;
 }
